@@ -1,0 +1,248 @@
+[gd_scene load_steps=3 format=3 uid="uid://cglhgpnx4fbme"]
+
+[ext_resource type="Script" path="res://game.gd" id="1_iy272"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_palj1"]
+bg_color = Color(0.952489, 0.344005, 0.6084, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.767664, 0.129139, 0.390841, 1)
+expand_margin_left = 20.0
+expand_margin_top = 20.0
+expand_margin_right = 20.0
+expand_margin_bottom = 20.0
+shadow_color = Color(0.717129, 0.082495, 0.273363, 0.6)
+shadow_size = 20
+
+[node name="Game" type="Node2D"]
+script = ExtResource("1_iy272")
+
+[node name="GridContainer" type="GridContainer" parent="."]
+offset_left = 39.0
+offset_top = 37.0
+offset_right = 679.0
+offset_bottom = 677.0
+theme_override_constants/h_separation = 10
+theme_override_constants/v_separation = 10
+columns = 5
+
+[node name="Button" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button2" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button3" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button4" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button5" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button6" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button7" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button8" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button9" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button10" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button11" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button12" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button13" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button14" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button15" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button16" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button17" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button18" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button19" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button20" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button21" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button22" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button23" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button24" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="Button25" type="Button" parent="GridContainer"]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 2
+theme_override_font_sizes/font_size = 72
+text = "x"
+
+[node name="menu" type="CanvasLayer" parent="."]
+
+[node name="ColorRect" type="ColorRect" parent="menu"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.670588, 0.662745, 0.886275, 0.870588)
+
+[node name="resultlabel" type="Label" parent="menu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -294.0
+offset_top = -262.0
+offset_right = 294.0
+offset_bottom = -97.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.675816, 0.171653, 0.543647, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 90
+text = "\"YOU WON!\""
+horizontal_alignment = 1
+
+[node name="resultlabel2" type="Label" parent="menu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -371.0
+offset_top = -93.0
+offset_right = 391.0
+offset_bottom = 111.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.675816, 0.171653, 0.543647, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 60
+text = "correct word: mango"
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="menu"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -87.0
+offset_top = 83.0
+offset_right = 68.0
+offset_bottom = 176.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 60
+theme_override_styles/focus = SubResource("StyleBoxFlat_palj1")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_palj1")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_palj1")
+theme_override_styles/normal = SubResource("StyleBoxFlat_palj1")
+text = "PLAY"
+
+[connection signal="pressed" from="menu/Button" to="." method="_on_button_pressed"]

@@ -1,0 +1,345 @@
+[gd_scene load_steps=11 format=4 uid="uid://cuahut8hwruf6"]
+
+[ext_resource type="Texture2D" uid="uid://bimlnedove2rs" path="res://Green.png" id="1_nfmyu"]
+[ext_resource type="Texture2D" uid="uid://bsxqf83bear0q" path="res://Terrain (16x16).png" id="2_ef62j"]
+[ext_resource type="PackedScene" uid="uid://y4l5y6lbe6qd" path="res://scenes/main_character.tscn" id="3_parao"]
+[ext_resource type="Script" path="res://game_manager.gd" id="4_w7x74"]
+[ext_resource type="PackedScene" uid="uid://8rb06ummqxyo" path="res://scenes/collectable.tscn" id="5_3xfgg"]
+[ext_resource type="PackedScene" uid="uid://cyobj4r14xl54" path="res://scenes/finish.tscn" id="6_s2l4w"]
+[ext_resource type="PackedScene" uid="uid://db5f4hmgiwhml" path="res://scenes/LEVEL2.tscn" id="7_qy6h6"]
+[ext_resource type="Script" path="res://scenes/pause.gd" id="8_70oqq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_k0sas"]
+texture = ExtResource("2_ef62j")
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+6:0/0 = 0
+6:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:0/0 = 0
+7:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:0/0 = 0
+8:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:0/0 = 0
+9:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:0/0 = 0
+10:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:0/0 = 0
+13:0/0 = 0
+14:0/0 = 0
+15:0/0 = 0
+17:0/0 = 0
+18:0/0 = 0
+19:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+6:1/0 = 0
+6:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:1/0 = 0
+7:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:1/0 = 0
+8:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+9:1/0 = 0
+9:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+10:1/0 = 0
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+12:1/0 = 0
+13:1/0 = 0
+14:1/0 = 0
+15:1/0 = 0
+17:1/0 = 0
+17:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+18:1/0 = 0
+18:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+19:1/0 = 0
+19:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+6:2/0 = 0
+6:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+7:2/0 = 0
+7:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+8:2/0 = 0
+8:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+13:2/0 = 0
+14:2/0 = 0
+15:2/0 = 0
+17:2/0 = 0
+18:2/0 = 0
+19:2/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+2:4/0 = 0
+3:4/0 = 0
+4:4/0 = 0
+6:4/0 = 0
+7:4/0 = 0
+8:4/0 = 0
+9:4/0 = 0
+10:4/0 = 0
+12:4/0 = 0
+13:4/0 = 0
+14:4/0 = 0
+15:4/0 = 0
+17:4/0 = 0
+18:4/0 = 0
+19:4/0 = 0
+20:4/0 = 0
+21:4/0 = 0
+0:5/0 = 0
+1:5/0 = 0
+2:5/0 = 0
+3:5/0 = 0
+4:5/0 = 0
+6:5/0 = 0
+7:5/0 = 0
+8:5/0 = 0
+9:5/0 = 0
+10:5/0 = 0
+12:5/0 = 0
+13:5/0 = 0
+14:5/0 = 0
+15:5/0 = 0
+17:5/0 = 0
+18:5/0 = 0
+19:5/0 = 0
+20:5/0 = 0
+21:5/0 = 0
+0:6/0 = 0
+1:6/0 = 0
+2:6/0 = 0
+6:6/0 = 0
+7:6/0 = 0
+8:6/0 = 0
+13:6/0 = 0
+14:6/0 = 0
+15:6/0 = 0
+17:6/0 = 0
+18:6/0 = 0
+19:6/0 = 0
+0:8/0 = 0
+1:8/0 = 0
+2:8/0 = 0
+3:8/0 = 0
+4:8/0 = 0
+6:8/0 = 0
+7:8/0 = 0
+8:8/0 = 0
+9:8/0 = 0
+10:8/0 = 0
+12:8/0 = 0
+13:8/0 = 0
+14:8/0 = 0
+15:8/0 = 0
+17:8/0 = 0
+18:8/0 = 0
+19:8/0 = 0
+20:8/0 = 0
+0:9/0 = 0
+1:9/0 = 0
+2:9/0 = 0
+3:9/0 = 0
+4:9/0 = 0
+6:9/0 = 0
+7:9/0 = 0
+8:9/0 = 0
+9:9/0 = 0
+10:9/0 = 0
+12:9/0 = 0
+13:9/0 = 0
+14:9/0 = 0
+15:9/0 = 0
+17:9/0 = 0
+18:9/0 = 0
+19:9/0 = 0
+20:9/0 = 0
+0:10/0 = 0
+1:10/0 = 0
+2:10/0 = 0
+6:10/0 = 0
+7:10/0 = 0
+8:10/0 = 0
+13:10/0 = 0
+14:10/0 = 0
+15:10/0 = 0
+18:10/0 = 0
+19:10/0 = 0
+20:10/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_w1vh0"]
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_k0sas")
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 3.0
+offset_top = -16.0
+offset_right = 1673.0
+offset_bottom = -48.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_nfmyu")
+stretch_mode = 1
+
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+texture_filter = 1
+position = Vector2(1, 1)
+scale = Vector2(3, 3.04)
+tile_map_data = PackedByteArray("AAAAAA0AAAAHAAAAAAABAA0AAAAHAAAAAAACAA0AAAAHAAAAAAADAA0AAAAHAAAAAAAEAA0AAAAHAAAAAAAFAA0AAAAHAAAAAAAGAA0AAAAHAAAAAAAHAA0AAAAHAAAAAAAIAA0AAAAHAAAAAAAJAA0AAAAHAAAAAAAKAA0AAAAHAAAAAAAMAA0AAAAHAAAAAAANAA0AAAAHAAAAAAAOAA0AAAAHAAAAAAAPAA0AAAAHAAAAAAALAA0AAAAHAAAAAAAQAA0AAAAHAAAAAAARAA0AAAAHAAAAAAASAA0AAAAHAAAAAAATAA0AAAAHAAAAAAAVAA0AAAAHAAAAAAAWAA0AAAAHAAAAAAAUAA0AAAAHAAAAAAAXAA0AAAAHAAAAAAAAAAUAAAAGAAEAAAABAAUAAAAHAAEAAAACAAUAAAAHAAEAAAAAAAYAAAAGAAEAAAABAAYAAAAHAAEAAAACAAYAAAAHAAEAAAAAAAcAAAAGAAEAAAABAAcAAAAHAAEAAAACAAcAAAAHAAEAAAAAAAgAAAAGAAEAAAABAAgAAAAHAAEAAAACAAgAAAAIAAEAAAAAAAkAAAAGAAEAAAABAAkAAAAHAAEAAAACAAkAAAAIAAEAAAAAAAoAAAAGAAEAAAABAAoAAAAHAAEAAAACAAoAAAAIAAEAAAAAAAsAAAAGAAEAAAABAAsAAAAHAAEAAAACAAsAAAAIAAEAAAAAAAwAAAAGAAIAAAABAAwAAAAHAAIAAAACAAwAAAAGAAIAAGADAAUAAAAGAAAAAAAEAAUAAAAHAAAAAAAFAAUAAAAIAAAAAAADAAYAAAAGAAEAAAAEAAYAAAAHAAEAAAAFAAYAAAAIAAEAAAADAAcAAAAGAAIAAAAEAAcAAAAHAAIAAAAFAAcAAAAGAAIAAGAJAAQAAAAGAAAAAAAKAAQAAAAHAAAAAAALAAQAAAAIAAAAAAAJAAUAAAAGAAEAAAAKAAUAAAAHAAEAAAALAAUAAAAIAAEAAAAJAAYAAAAGAAIAAAAKAAYAAAAHAAIAAAALAAYAAAAGAAIAAGAPAAQAAAAGAAAAAAAPAAUAAAAGAAIAAAAMAAwAAAAGAAIAAAANAAwAAAAHAAIAAAAOAAwAAAAGAAIAAGASAAsAAAAGAAEAAAATAAsAAAAHAAEAAAAUAAsAAAAIAAEAAAASAAwAAAAGAAIA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AAAbAAoAAAAHAAEAAAAcAAgAAAAIAAAAAAAcAAkAAAAIAAEAAAAcAAoAAAAIAAEAAAAWAAsAAAAGAAEAAAAWAAwAAAAGAAIAAAAXAAsAAAAHAAEAAAAXAAwAAAAHAAIAAAAYAAsAAAAJAAAAAAAYAAwAAAAHAAIAAAAZAAoAAAAJAAAAAAAZAAsAAAAJAAAAAAAaAAsAAAAHAAEAAAAbAAsAAAAHAAEAAAAZAAwAAAAHAAIAAAAaAAwAAAAHAAIAAAAbAAwAAAAHAAIAAAAcAAsAAAAIAAEAAAAcAAwAAAAGAAIAAGAeAAsAAAAGAAAAAAAeAAwAAAAGAAEAAAAfAAsAAAAHAAAAAAAfAAwAAAAHAAEAAAAgAAsAAAAIAAAAAAAgAAwAAAAGAAIAAGAmAAQAAAAGAAAAAAAmAAUAAAAGAAIAAAAnAAQAAAAHAAAAAAAnAAUAAAAGAAAAAAAoAAQAAAAHAAIAAAAoAAUAAAAHAAAAAAAnAAYAAAAHAAEAAAAoAAYAAAAHAAEAAAApAAUAAAAGAAAAAAApAAYAAAAHAAEAAAAnAAcAAAAHAAEAAAAnAAgAAAAJAAAAAAAoAAcAAAAHAAEAAAAoAAgAAAAHAAEAAAAkAAcAAAAGAAAAAAAkAAgAAAAGAAEAAAAlAAcAAAAHAAAAAAAlAAgAAAAHAAEAAAAmAAcAAAAIAAAAAAAmAAgAAAAHAAEAAAAnAAkAAAAJAAAAAAAnAAoAAAAJAAAAAAAoAAkAAAAHAAEAAAAoAAoAAAAJAAAAAAApAAoAAAAHAAEAAAAkAAoAAAAGAAEAAAAlAAoAAAAHAAEAAAAmAAkAAAAHAAEAAAAmAAoAAAAHAAEAAAAkAAsAAAAGAAAAAAAkAAwAAAAGAAIAAAAlAAsAAAAHAAAAAAAlAAwAAAAHAAIAAAAmAAsAAAAIAAAAAAAmAAwAAAAHAAIAAAAnAAsAAAAHAAEAAAAnAAwAAAAHAAIAAAAoAAsAAAAHAAEAAAAoAAwAAAAHAAIAAAApAAsAAAAGAAAAAAApAAwAAAAHAAIAAAAoAAMAAAAGAAAAAAApAAMAAAAHAAAAAAApAAQAAAAHAAIAAAAqAAMAAAAIAAAAAAAqAAQAAAAIAAEAAAAqAAUAAAAHAAAAAAAqAAYAAAAIAAEAAAAqAAoAAAAHAAAAAAArAAoAAAAIAAAAAAAqAAsAAAAHAAAAAAArAAsAAAAIAAAAAAAqAAwAAAAHAAIAAAArAAwAAAAGAAIAAGAwAAIAAAAGAAAAAAAwAAMAAAAGAAEAAAAkAAkAAAAGAAEAAAAlAAkAAAAHAAEAAAApAAcAAAAHAAEAAAAqAAcAAAAIAAEAAAAqAAgAAAAIAAEAAAAqAAkAAAAIAAEAAAApAAkAAAAHAAEAAAApAAgAAAAHAAEAAAAgAAYAAAARAAEAAAAhAAYAAAASAAEAAAAiAAYAAAATAAEAAAAdAAQAAAAGAAAAAAAdAAUAAAAGAAIAAAAeAAQAAAAHAAAAAAAeAAUAAAAGAAIAAGAuAAcAAAAGAAAAAAAuAAgAAAAGAAIAAAAvAAcAAAAHAAAAAAAvAAgAAAAHAAIAAAAwAAcAAAAIAAAAAAAwAAgAAAAGAAIAAGAWAAEAAAAGAAAAAAAWAAIAAAAGAAIAAAAXAAEAAAAHAAAAAAAXAAIAAAAHAAIAAAAYAAEAAAAIAAAAAAAYAAIAAAAGAAIAAGA=")
+tile_set = SubResource("TileSet_w1vh0")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_parao")]
+position = Vector2(-96, -60)
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position = Vector2(159, 208)
+position_smoothing_enabled = true
+position_smoothing_speed = 7.0
+
+[node name="gamemanager" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("4_w7x74")
+
+[node name="collectables" type="Node" parent="."]
+
+[node name="collectable13" parent="collectables" instance=ExtResource("5_3xfgg")]
+position = Vector2(1799, 45)
+
+[node name="collectable8" parent="collectables" instance=ExtResource("5_3xfgg")]
+position = Vector2(1429, 201)
+
+[node name="collectable9" parent="collectables" instance=ExtResource("5_3xfgg")]
+position = Vector2(1263, 91)
+
+[node name="collectable10" parent="collectables" instance=ExtResource("5_3xfgg")]
+position = Vector2(1575, 43)
+
+[node name="collectable11" parent="collectables" instance=ExtResource("5_3xfgg")]
+position = Vector2(1609, 249)
+
+[node name="collectable12" parent="collectables" instance=ExtResource("5_3xfgg")]
+position = Vector2(2113, 245)
+
+[node name="collectable14" parent="collectables" instance=ExtResource("5_3xfgg")]
+position = Vector2(1929, 385)
+
+[node name="collectable" parent="collectables" instance=ExtResource("5_3xfgg")]
+position = Vector2(695, 181)
+
+[node name="Node" type="Node" parent="collectables"]
+
+[node name="collectable4" parent="collectables/Node" instance=ExtResource("5_3xfgg")]
+position = Vector2(499, 91)
+
+[node name="collectable" parent="collectables/Node/collectable4" instance=ExtResource("5_3xfgg")]
+position = Vector2(-461, 46)
+
+[node name="collectable2" parent="collectables/Node/collectable4" instance=ExtResource("5_3xfgg")]
+position = Vector2(-274, 386)
+
+[node name="collectable5" parent="collectables/Node" instance=ExtResource("5_3xfgg")]
+position = Vector2(932, 230)
+
+[node name="collectable6" parent="collectables/Node" instance=ExtResource("5_3xfgg")]
+position = Vector2(589, 388)
+
+[node name="collectable7" parent="collectables/Node" instance=ExtResource("5_3xfgg")]
+position = Vector2(656, 387)
+
+[node name="finish" parent="collectables/Node" instance=ExtResource("6_s2l4w")]
+position = Vector2(12, 4)
+target_level = ExtResource("7_qy6h6")
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="Panel" type="Panel" parent="UI"]
+anchors_preset = -1
+anchor_right = 0.316
+anchor_bottom = 0.111
+offset_left = 12.0
+offset_top = 14.0
+offset_right = 11.968
+offset_bottom = 14.072
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="pointsLabel" type="Label" parent="UI/Panel"]
+unique_name_in_owner = true
+layout_mode = 1
+offset_left = 3.0
+offset_top = -3.0
+offset_right = 235.0
+offset_bottom = 85.0
+theme_override_font_sizes/font_size = 35
+text = "POINTS : 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Pause" type="Node" parent="UI"]
+script = ExtResource("8_70oqq")
+
+[node name="PausePanel" type="Panel" parent="UI/Pause"]
+unique_name_in_owner = true
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="UI/Pause/PausePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -174.0
+offset_top = -167.0
+offset_right = 185.0
+offset_bottom = -91.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 50
+text = "GAME PAUSED"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/Pause/PausePanel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -254.0
+offset_top = -73.0
+offset_right = 264.0
+offset_bottom = 115.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 32
+
+[node name="Resume" type="Button" parent="UI/Pause/PausePanel/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 51
+text = "RESUME"
+
+[node name="Menu" type="Button" parent="UI/Pause/PausePanel/VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+theme_override_font_sizes/font_size = 51
+text = "GO TO MAIN MENU"
+
+[connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Resume" to="UI/Pause" method="_on_resume_pressed"]
+[connection signal="pressed" from="UI/Pause/PausePanel/VBoxContainer/Menu" to="UI/Pause" method="_on_menu_pressed"]

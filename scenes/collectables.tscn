@@ -1,0 +1,50 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5sw818sosjqc"]
+
+[ext_resource type="PackedScene" uid="uid://8rb06ummqxyo" path="res://scenes/collectable.tscn" id="1_n5m6q"]
+[ext_resource type="PackedScene" uid="uid://cyobj4r14xl54" path="res://scenes/finish.tscn" id="2_6u2q2"]
+
+[node name="collectables" type="Node"]
+
+[node name="collectable13" parent="." instance=ExtResource("1_n5m6q")]
+position = Vector2(1799, 45)
+
+[node name="collectable8" parent="." instance=ExtResource("1_n5m6q")]
+position = Vector2(1429, 201)
+
+[node name="collectable9" parent="." instance=ExtResource("1_n5m6q")]
+position = Vector2(1263, 91)
+
+[node name="collectable10" parent="." instance=ExtResource("1_n5m6q")]
+position = Vector2(1575, 43)
+
+[node name="collectable11" parent="." instance=ExtResource("1_n5m6q")]
+position = Vector2(1609, 249)
+
+[node name="collectable12" parent="." instance=ExtResource("1_n5m6q")]
+position = Vector2(2113, 245)
+
+[node name="collectable14" parent="." instance=ExtResource("1_n5m6q")]
+position = Vector2(1929, 385)
+
+[node name="Node" type="Node" parent="."]
+
+[node name="collectable4" parent="Node" instance=ExtResource("1_n5m6q")]
+position = Vector2(499, 91)
+
+[node name="collectable" parent="Node/collectable4" instance=ExtResource("1_n5m6q")]
+position = Vector2(-461, 46)
+
+[node name="collectable2" parent="Node/collectable4" instance=ExtResource("1_n5m6q")]
+position = Vector2(-274, 386)
+
+[node name="collectable5" parent="Node" instance=ExtResource("1_n5m6q")]
+position = Vector2(932, 230)
+
+[node name="collectable6" parent="Node" instance=ExtResource("1_n5m6q")]
+position = Vector2(589, 388)
+
+[node name="collectable7" parent="Node" instance=ExtResource("1_n5m6q")]
+position = Vector2(656, 387)
+
+[node name="finish" parent="Node" instance=ExtResource("2_6u2q2")]
+position = Vector2(12, 4)
