@@ -23,7 +23,9 @@ Navigate through exciting levels, and after completing each obstacle course, you
 ## Try It Out
 
 Currently, the game runs on **Godot Engine**.  
-*Soon,* you’ll be able to play it right in your browser via the GitHub Pages link! (Stay tuned.)
+Here is your link, made clickable:
+[Twinkle Toes](https://6846898317b3df45c9a8e72f--deft-phoenix-09ab95.netlify.app/)
+
 
 ---
 
