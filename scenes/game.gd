@@ -80,6 +80,7 @@ func get_random_wordle():
 	var lines = content.split("\n")
 	randomize()
 	var rng = RandomNumberGenerator.new()
+	@warning_ignore("shadowed_variable")
 	var index = rng.randi_range(0, lines.size()-1)
 	return lines[index].to_upper()
 	
@@ -112,7 +113,7 @@ func check_win():
 		menu.show()
 		label.text = "YOU LOST"
 		word_label.text = "CORRECT WORD: "+ wordle
-		get_tree().change_scene_to_file("res://scenes/game.tscn")
+		
 		
 
 func _on_button_pressed():
